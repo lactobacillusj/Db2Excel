@@ -26,7 +26,7 @@ public class MainApp_EP {
 			List<?> tableInfo = tools.db2List(conn, tableName);
 			tools.putTableInfo(wb, tableName, tableInfo);
 		}
-//
+////
 		String fileName = "C:\\Users\\TA°ø¿ë\\Desktop\\storege_mk\\example\\db2excel.xls";
 		tools.writeExcel(wb, fileName);
 	}
