@@ -2,14 +2,33 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/Users/TA공용/Desktop/mk/ojdbc6-11.2.0.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/TA공용/Desktop/mk/poi-4.1.0/poi-4.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/TA공용/Desktop/mk/poi-4.1.0/poi-examples-4.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/TA공용/Desktop/mk/poi-4.1.0/poi-excelant-4.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/TA공용/Desktop/mk/poi-4.1.0/poi-ooxml-4.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/TA공용/Desktop/mk/poi-4.1.0/poi-ooxml-schemas-4.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/TA공용/Desktop/mk/poi-4.1.0/poi-scratchpad-4.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/TA공용/Desktop/mk/poi-4.1.0/ooxml-lib/curvesapi-1.06.jar"/>
-	<classpathentry kind="lib" path="C:/Users/TA공용/Desktop/mk/poi-4.1.0/ooxml-lib/xmlbeans-3.1.0.jar"/>
+	<classpathentry kind="lib" path="/MyUtil/lib/apache-mime4j-core-0.7.jar"/>
+	<classpathentry kind="lib" path="/MyUtil/lib/apache-mime4j-dom-0.7.jar"/>
+	<classpathentry kind="lib" path="/MyUtil/lib/asm-3.1.jar"/>
+	<classpathentry kind="lib" path="/MyUtil/lib/boilerpipe-1.1.0.jar"/>
+	<classpathentry kind="lib" path="/MyUtil/lib/commons-codec-1.6.jar"/>
+	<classpathentry kind="lib" path="/MyUtil/lib/commons-compress-1.3.jar"/>
+	<classpathentry kind="lib" path="/MyUtil/lib/commons-lang3-3.3.2.jar"/>
+	<classpathentry kind="lib" path="/MyUtil/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/MyUtil/lib/crawler4j-3.5.jar"/>
+	<classpathentry kind="lib" path="/MyUtil/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/MyUtil/lib/geronimo-stax-api_1.0_spec-1.0.1.jar"/>
+	<classpathentry kind="lib" path="/MyUtil/lib/httpclient-4.2.3.jar"/>
+	<classpathentry kind="lib" path="/MyUtil/lib/httpcore-4.2.2.jar"/>
+	<classpathentry kind="lib" path="/MyUtil/lib/je-4.0.92.jar"/>
+	<classpathentry kind="lib" path="/MyUtil/lib/log4j-1.2.14.jar"/>
+	<classpathentry kind="lib" path="/MyUtil/lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="/MyUtil/lib/metadata-extractor-2.4.0-beta-1.jar"/>
+	<classpathentry kind="lib" path="/MyUtil/lib/mybatis-3.1.1.jar"/>
+	<classpathentry kind="lib" path="/MyUtil/lib/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="/MyUtil/lib/poi-3.10-FINAL.jar"/>
+	<classpathentry kind="lib" path="/MyUtil/lib/poi-ooxml-3.10-FINAL.jar"/>
+	<classpathentry kind="lib" path="/MyUtil/lib/poi-ooxml-schemas-3.10-FINAL.jar"/>
+	<classpathentry kind="lib" path="/MyUtil/lib/poi-scratchpad-3.10-FINAL.jar"/>
+	<classpathentry kind="lib" path="/MyUtil/lib/postgresql-9.3-1101.jdbc41.jar"/>
+	<classpathentry kind="lib" path="/MyUtil/lib/tagsoup-1.2.1.jar"/>
+	<classpathentry kind="lib" path="/MyUtil/lib/tika-core-1.0.jar"/>
+	<classpathentry kind="lib" path="/MyUtil/lib/tika-parsers-1.0.jar"/>
+	<classpathentry kind="lib" path="/MyUtil/lib/xmlbeans-2.3.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
