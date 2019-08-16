@@ -31,20 +31,20 @@ public class MainApp_EP {
 			String dbURL = "jdbc:oracle:thin:@localhost:1521:IIP";
 			String dbID = "scott";
 			String dbPassword = "tiger";
-			Class.forName("oracle.jdbc.driver.OracleDriver"); // µğºñ Á¢¼ÓÀ» µµ¿ÍÁÖ´Â mysqlÁ¢¼Ó µå¶óÀÌ¹ö
-			conn = DriverManager.getConnection(dbURL, dbID, dbPassword); // dbURL,dbID, dbPassword¸¦ »ç¿ëÇØ¼­ Á¢¼ÓÇÑ´Ù. conn¿¡ Á¢¼Ó
-																			// Á¤º¸°¡ ´ã±è
+			Class.forName("oracle.jdbc.driver.OracleDriver"); // ë””ë¹„ ì ‘ì†ì„ ë„ì™€ì£¼ëŠ” mysqlì ‘ì† ë“œë¼ì´ë²„
+			conn = DriverManager.getConnection(dbURL, dbID, dbPassword); // dbURL,dbID, dbPasswordë¥¼ ì‚¬ìš©í•´ì„œ ì ‘ì†í•œë‹¤. connì— ì ‘ì†
+																			// ì •ë³´ê°€ ë‹´ê¹€
 			stmt = conn.createStatement();
 			String sql = "SELECT * FROM tabs";
 			rs = stmt.executeQuery(sql);
 			metaData = rs.getMetaData();
 
-			// °¢ ÇàÀ» ÀĞ¾î ¸®½ºÆ®¿¡ ÀúÀåÇÑ´Ù.
+			// ê° í–‰ì„ ì½ì–´ ë¦¬ìŠ¤íŠ¸ì— ì €ì¥í•œë‹¤.
 			int sizeOfcolumn = metaData.getColumnCount();
 			String column;
 			List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
 			Map<String, Object> map;
-
+			//
 			while (rs.next()) {
 				map = new HashMap<String, Object>();
 
@@ -93,10 +93,10 @@ public class MainApp_EP {
 
 				// System.out.println("=========================================");
 			}
-			File file = new File("C:\\Users\\TA°ø¿ë\\Desktop\\storege_mk\\example\\examplewrite.xls");
+			File file = new File("C:\\Users\\TAê³µìš©\\Desktop\\storege_mk\\example\\examplewrite.xls");
 			FileOutputStream fileOut = new FileOutputStream(file);
 			workbook.write(fileOut);
-			System.out.println("ÆÄÀÏ Ãâ·Â ¿Ï·á");
+			System.out.println("íŒŒì¼ ì¶œë ¥ ì™„ë£Œ");
 			fileOut.close();
 		} catch (Exception e) {
 			e.printStackTrace();
