@@ -6,7 +6,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import com.lactovacillusj.util.*;
+import com.lactovacillusj.util.Tools_upgrade;
 
 public class TableVO {
 	private String name;
@@ -44,9 +44,9 @@ public class TableVO {
 	public void loadColumn(Connection conn) throws Exception{
 		this.column = new ArrayList<ColumnVO>();
 		
-		//컬럼 메타데이터 설정
+		//컬럼이름, 데이터타입, 데이터길이만 메타데이터로 사용 
 		String sql = "SELECT column_name, data_type, data_length FROM USER_TAB_COLUMNS"
-				+ "WHERE 1=1"
+				+ " WHERE 1=1"
 				+ " AND TABLE_NAME = '" + name + "'"
 				+ " ORDER BY COLUMN_ID";
 		
@@ -55,7 +55,7 @@ public class TableVO {
 		ResultSet rs = stmt.executeQuery(sql);
 		
 		while(rs.next()) {
-			ColumnVO column = new ColumnVO(rs.getString("column)name"));
+			ColumnVO column = new ColumnVO(rs.getString("column_name"));
 			column.setType(rs.getString("data_type"));
 			column.setMaxLength(rs.getInt("data_length"));
 			
@@ -66,6 +66,6 @@ public class TableVO {
 	public void loadData(Connection conn) throws Exception{
 		this.data = new ArrayList<Map<String,String>>();
 		String sql = "SELECT * FROM " + name;
-		this.data = Tools.getListMap(conn, sql);
+		this.data = Tools_upgrade.getListMap(conn, sql);
 	}
 }
