@@ -212,7 +212,8 @@ public class Tools_upgrade {
 		System.out.println("========== writeExcel ==========");
 		System.out.println("   "+ fileName);
 		System.out.println();
-
+		
+		//wb에 저장된 데이터를 지정한 경로에 출력한다.
 	}
 	
 	public static XSSFSheet setTableInfoSheet(XSSFWorkbook wb){
@@ -233,7 +234,7 @@ public class Tools_upgrade {
 		System.out.println("========== setTableInfoSheet ==========");
 		System.out.println("setTableInfoSheet_Table_Column_name_set");
 		System.out.println();
-
+		//첫 행에 직접적은 컬럼 이름을 출력한다. 
 		
 		return sheet;
 	}
@@ -263,7 +264,7 @@ public class Tools_upgrade {
 		System.out.println("========== addTableInfoRow ==========");
 		System.out.println("   "+ table.getName());
 		System.out.println();
-
+		//ColumnVO 형에 맞는 column 정보를 가져와 sheet에 column 밑으로 table 데이터를 모두 넣는다. 
 		return idx;
 	}
 	
@@ -297,7 +298,8 @@ public class Tools_upgrade {
 		System.out.println("========== addVOToSheet ==========");
 		System.out.println("   "+ table.getName());
 		System.out.println();
-
+		//테이블에 저장된 하나의 테이블 이름 별 데이터를 시트에 넣음
+		
 	}
 
 	public static List<TableVO> excelToVOList(String fileName) throws Exception{
@@ -317,7 +319,10 @@ public class Tools_upgrade {
 		}
 		
 		System.out.println();
-
+		//readTableList, readTableData를 이용하여 테이블 정보를 가져온다.
+		
+		//readTableList
+		//readTableData tableVO형으로 가져온 table에 데이터를 넣어준다. 
 		return list;
 	}
 
@@ -404,7 +409,7 @@ public class Tools_upgrade {
 		case XSSFCell.CELL_TYPE_FORMULA:
 			return cell.getCellFormula();
 		}
-		
+		//엑셀에 있는 각각의 셀 값들을 String형태로 반환한다. 
 		return null;
 		
 	}
